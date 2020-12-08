@@ -20,6 +20,12 @@ Route::get('/login', function () {
 });
 
 
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('login');
+});
+
+
 
 Route::post('/login',[UserController::class,'login']);
 Route::get('/',[ProductController::class,'index']);
