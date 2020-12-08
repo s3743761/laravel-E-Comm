@@ -10,6 +10,10 @@
 </head>
 <body>
 
+<?php  
+use App\Http\Controllers\ProductController;
+$total = ProductController::cartItem();
+?>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -21,10 +25,16 @@
       <li><a href="#">Page 2</a></li>
       <li><a href="#">Page 3</a></li>
     </ul>
+    <form action="/search" class="navbar-form navbar-left">
+    <div class ="form-group">
+    <input type="text" name = "query" class = "form-control search-box" placeholder="Search">
+    </div>
+    <button type="submit" class="btn btn-default">Search</button>
+  </form>
 
     <ul class="nav navbar-nav navbar-right">
   
-      <li><a href="#">Cart(0)</a></li>
+      <li><a href="#">Cart({{$total}})</a></li>
      
     </ul>
   </div>
