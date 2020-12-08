@@ -13,10 +13,8 @@ if(Session::has('user')){
       <a class="navbar-brand" href="/">E-Comm</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#"> Orders</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="myorders"> Orders</a></li>
     </ul>
     <form action="/search" class="navbar-form navbar-left">
     <div class ="form-group">
@@ -27,7 +25,7 @@ if(Session::has('user')){
 
     <ul class="nav navbar-nav navbar-right">
   
-      <li><a href="#">Cart({{$total}})</a></li>
+      <li><a href="/cartlist">Cart({{$total}})</a></li>
       @if(Session::has('user'))
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
@@ -39,6 +37,7 @@ if(Session::has('user')){
       </li>
       @else
       <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
       @endif
     </ul>
   </div>
