@@ -35,7 +35,7 @@ Clone the `laravel-E-Comm` repository using git:
 
 ```bash
 git clone https://github.com/s3743761/laravel-E-Comm.git
-cd E-Comm
+cd laravel-E-Comm
 ```
 
 Run the application with this command:
