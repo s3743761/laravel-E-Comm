@@ -29,9 +29,9 @@ Here are screenshots that show the E-commerce demo application in use.
 ![Shopping Cart](/screenshots/shoppingCart.png?raw=true "Shopping Cart")
 
 ## Getting Started
-To get started  you can simply clone this `E-Comm` repository and install the dependencies.
+To get started  you can simply clone this `laravel-E-Comm` repository and install the dependencies.
 
-Clone the `E-Comm` repository using git:
+Clone the `laravel-E-Comm` repository using git:
 
 ```bash
 git clone https://github.com/s3743761/laravel-E-Comm.git
