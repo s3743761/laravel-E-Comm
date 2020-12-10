@@ -6,8 +6,33 @@ This is a sample application that demonstrates an E-commerce website using the l
 
 ## Pre-requisites
 - Laravel 8
-- Php
-- mySQL
+- PHP 7.3.25 
+- MySQL 8.0.20
+
+## Getting Started
+To get started  you can simply clone this `laravel-E-Comm` repository and install the dependencies.
+
+Clone the `laravel-E-Comm` repository using git:
+
+```bash
+git clone https://github.com/s3743761/laravel-E-Comm.git
+cd laravel-E-Comm
+```
+Run ```composer install``` on your cmd or terminal
+
+Copy `.env.example` file to ``.env`` on the root folder. You can type ```copy .env.example .env``` if using command prompt Windows or ```cp .env.example .env``` if using terminal, Ubuntu
+
+Open your .env file and change the database name (`DB_DATABASE`) to "ecomm", username (`DB_USERNAME`) and password (`DB_PASSWORD`) field correspond to your configuration. 
+
+Run ```php artisan key:generate```
+
+Run ```php artisan migrate```
+
+
+Run the application with this command:
+```bash
+php artisan serve
+```
 
 
 
@@ -28,17 +53,4 @@ Here are screenshots that show the E-commerce demo application in use.
 **Shopping Cart**
 ![Shopping Cart](/screenshots/shoppingCart.png?raw=true "Shopping Cart")
 
-## Getting Started
-To get started  you can simply clone this `laravel-E-Comm` repository and install the dependencies.
 
-Clone the `laravel-E-Comm` repository using git:
-
-```bash
-git clone https://github.com/s3743761/laravel-E-Comm.git
-cd laravel-E-Comm
-```
-
-Run the application with this command:
-```bash
-php artisan serve
-```
