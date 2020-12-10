@@ -37,21 +37,37 @@ php artisan serve
 
 
 
-## Live Demonstration
+## Features
 
-Here are screenshots that show the E-commerce demo application in use.
+Here are the features that show the E-commerce demo application in use.
 
 **Home Page**
-![Home Page](/screenshots/homePage.png?raw=true "Optional Title")
 
+- A dynamic carousel showing the trending products
+- A Search bar to search from a vast variety of products through their category or name.
+- A login and register functionality for the user to go their cart and see already added products from their previous vists. 
+ Each user has their personal cart where their previously added items are saved.
 ---
 
 **Item Detail Page**
-![Item Detail](/screenshots/itemDetail.png?raw=true "Optional Title")
+
+- Displaying the product image wiith some description explaining it.
+- Allowing the user to add the product in their cart or buying the product directly.
+- Redirecting the user to login page if the user hasn't logged in and they try to add an item to their cart.
+
 
 ---
 
 **Shopping Cart**
-![Shopping Cart](/screenshots/shoppingCart.png?raw=true "Shopping Cart")
+
+- Displaying each product with the quantity selected.
+- Providng a total for that order including taxes.
+- Allowiing the user to enter their address and selecting a payment method and placing the order if all fields are validated.
+
+---
+
+**Orders Page**
+
+- Allows the user to see their previously placed orders with their shipping status and the payment status.
 
 
